@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+     background-color: antiquewhite;
+     text-align: center;
+ }
+
+.container .image {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.container .image div {
+    overflow: hidden;
+    padding: 2pex;
+    border-radius: 10px;
+}
+
+.container div img {
+    width: 100%;height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.container .image div:hover img {
+    background-clip: bleur(20px);
+}
+

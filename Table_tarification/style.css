@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --box-1: rgb(95, 95, 227);
+    --box-2:rgb(95, 227, 113);
+    --box-3:rgb(227, 95, 95);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+body {
+    height: 100vh;
+    background-color:antiquewhite;
+    margin-top: 50px;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+h1 { margin-bottom: 1rem;}
+.box-f {margin-bottom: 3rem;}
+
+.box .box-f li:nth-child(4),
+.box .box-f li:nth-child(5) {
+    opacity: 0.5;
+}
+
+.box:nth-child(1) h1 ,.box:nth-child(1) .price { color: var(--box-1); }
+.box:nth-child(2) h1 ,.box:nth-child(2) .price { color: var(--box-2); }
+.box:nth-child(3) h1 ,.box:nth-child(3) .price { color: var(--box-3); }
+
+.box:nth-child(1) .btn { background-color: var(--box-1); }
+.box:nth-child(2) .btn { background-color: var(--box-2); }
+.box:nth-child(3) .btn { background-color: var(--box-3); }
+
+.box:nth-child(1)  { border-top: 3px solid var(--box-1); }
+.box:nth-child(2)  { border-top: 3px solid var(--box-2); }
+.box:nth-child(3)  { border-top: 3px solid var(--box-3); }
+
+.container .box {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #999;
+    overflow: hidden;
+}
+
+.box .box-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #CCC;    
+    padding-bottom: 1.5rem;
+}
+
+.box .box-header .price {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+
+.box .box-header .price span {
+    color: #444;
+    font-size: 20px;
+}
+
+.box .box-header p { color: #333; }
+
+
+.box ul li {
+    margin-bottom: 1rem;
+    border-bottom: 1px  #CCC;
+}
+
+.box .btn {
+    padding: 14px 28px;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 30px; height: 100%;
+    background-color: rgba(240, 248, 255, 0.347);
+    transform: skew(-20deg);
+    transition: .5s;
+}
+
+
+.box .btn:hover::before {
+    left: 105%;
+}

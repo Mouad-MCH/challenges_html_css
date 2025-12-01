@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 41, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+/****************** Card ******************** */
+
+.card {
+    padding: 20px;
+    background-color: rgb(16, 20, 67);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #000;
+    max-width: 250px;
+    height: 300px;
+    box-shadow: 8px 8px 20px #000,
+               inset 1px 1px 1px #ffffff61;
+    transition: .3s;
+}
+
+.card .image {
+    width: 70px;aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid blue;
+    margin-bottom: 1rem;
+}
+
+.image img {
+    width: 100%;
+}
+
+h1 { color: cyan; font-size: 20px;}
+
+p { 
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 100;
+    margin:10px; 
+    text-align: center;
+    line-height: 2;
+}
+
+button {
+    margin-top: auto;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: cyan;
+    transition: .5s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+/* button:hover { background-color: rgb(12, 149, 149); } */
+.card:hover {
+    box-shadow: 0 0 0;
+}
+
+button span {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 30px;
+    height: 100%;
+    background-color: #ffffffac;
+    transition: .5s;
+}
+
+button:hover > span {
+    left: 100%;
+}
+
+
+/****************************************/
