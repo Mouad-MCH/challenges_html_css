@@ -1,0 +1,52 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --color-black : #000;
+    --color-wite: #fff; 
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: var(--color-black);
+}
+
+.container {
+    text-align: center;
+}
+
+p { margin: 10px; }
+
+button {
+    padding: 8px 24px;
+    background-color: var(--color-black);
+    color: var(--color-wite);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode button {
+    background-color: #17a2b8;
+}

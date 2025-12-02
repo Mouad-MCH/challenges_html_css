@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dark/Light Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>First Title</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+           Numquam unde illo repellendus. Excepturi odit culpa natus
+           deserunt quisquam cupiditate temporibus reprehenderit commodi 
+           aliquid laudantium, velit laboriosam sint in! Voluptatem, perferendis?</p>
+
+           <button id="btn">Mode</button>
+    </div>
+
+
+    <script>
+        const btn = document.getElementById("btn");
+        const body = document.body;
+
+
+        btn.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+        })
+
+    </script>
+    
+</body>
+</html>
